@@ -1,0 +1,46 @@
+@import '../../config/colors';
+
+.container {
+   max-width: 370px;
+   & .content {
+      padding: 25px;
+      & .dateWrapper {
+         display: flex;
+         align-items: center;
+         margin-bottom: 24px;
+         max-height: 20px;
+         & .date {
+            font-size: 14px;
+            font-family: 'Montserrat';
+            margin-left: 8px;
+            color: $main-text-color;
+            opacity: 0.6;
+         }
+      }
+      & .title {
+         font-size: 24px;
+         font-weight: 400;
+         font-family: 'Montserrat';
+         color: $main-text-color;
+         text-align: left;
+      }
+      & .summary {
+         font-size: 16px;
+         font-weight: 400;
+         font-family: 'Montserrat';
+         color: $main-text-color;
+         text-align: left;
+         line-height: 1.5rem;
+         min-height: 4.5rem;
+      }
+   }
+   & .actions {
+      margin-left: 25px;
+      padding: 0;
+      & .actionBtn {
+         color: $main-text-color;
+         font-size: 16px;
+         font-weight: 700;
+      }
+   }
+}

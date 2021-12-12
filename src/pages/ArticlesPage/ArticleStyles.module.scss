@@ -1,0 +1,30 @@
+@import '../../config/colors';
+
+.container {
+   & .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   & .filterWrapper {
+      margin: 40px 0;
+      max-width: 50%;
+   }
+   & .resultWrapper {
+      font-weight: 600;
+      font-size: 16px;
+      font-family: 'Montserrat';
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 5px;
+      color: $main-text-color;
+   }
+   & .content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      & .cardWrapper {
+         margin-top: 45px;
+      }
+   }
+}

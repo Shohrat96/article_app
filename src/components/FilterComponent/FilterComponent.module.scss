@@ -1,0 +1,31 @@
+@import '../../config/colors';
+.container {
+   display: flex;
+   flex-direction: column;
+   & .filterLabel {
+      font-weight: 600;
+      font-size: 16px;
+      font-family: 'Montserrat';
+      color: $main-text-color;
+   }
+   & .inputWrapper {
+      border: 1px solid #eaeaea;
+      border-radius: 5px;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      margin-top: 10px;
+      & .inputElement {
+         height: 100%;
+         width: 100%;
+         border: none;
+         outline: none;
+         padding-left: 20px;
+         color: $secondary-text-color;
+         font-size: 16px;
+         font-family: 'Montserrat';
+      }
+   }
+}
